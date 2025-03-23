@@ -1,7 +1,10 @@
 ## To-Do List
-- [ ] Classe abstrata dispositivo_industrial
-- [ ] Classe derivada sensor_temperatura
-- [ ] Implementação na main da classe sensor_temperatura
+- [x] Classe abstrata dispositivo_industrial
+- [x] Classe derivada sensor_temperatura
+    - [x] Implementação de ferramentas básicas como sleep e write/read log
+    - [x] Básico de como manipular threads
+    - [x] Como separar arquivos em .h e .cpp
+- [x] Implementação na main da classe sensor_temperatura
 - [ ] classe controlador_motor
 - [ ] Implementação na main da classe controlador_motor
 - [ ] classe robo_manipulador
@@ -15,6 +18,7 @@
 - [ ] Escrever documentação
 - [ ] Organizar hierarquia de arquivos como a atividade pede (criar uma branch provavelmente)
 - [ ] Relatório breve (máximo 2 páginas) explicando como os conceitos de POO foram aplicados
+- [ ] Criar um sistema de make/makefile ou cmake (aprender algo mais complexo nesse quesito)
 
 
 
