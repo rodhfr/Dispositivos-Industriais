@@ -5,8 +5,8 @@
     - [x] Básico de como manipular threads
     - [x] Como separar arquivos em .h e .cpp
 - [x] Implementação na main da classe sensor_temperatura
-- [ ] classe controlador_motor
-- [ ] Implementação na main da classe controlador_motor
+- [x] classe controlador_motor
+- [x] Implementação na main da classe controlador_motor
 - [ ] classe robo_manipulador
 - [ ] Implementação na main da classe robo_manipulador
 - [ ] comportamentos específicos para cada tipo de dispositivo
