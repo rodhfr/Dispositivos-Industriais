@@ -7,8 +7,10 @@
 - [x] Implementação na main da classe sensor_temperatura
 - [x] classe controlador_motor
 - [x] Implementação na main da classe controlador_motor
-- [ ] classe robo_manipulador
-- [ ] Implementação na main da classe robo_manipulador
+- [x] classe robo_manipulador
+- [x] Implementação na main da classe robo_manipulador
+- [ ] sistema_controle
+- [ ] implementacao sistema_controle na main
 - [ ] comportamentos específicos para cada tipo de dispositivo
 - [ ] raw pointers para representar os dispositivos
 - [ ] Gerencie a memória corretamente, liberando recursos no destrutor da classe sistema_controle
