@@ -63,3 +63,4 @@ void lerLog(const string& filename) {
     }
     arquivo.close();
 }
+

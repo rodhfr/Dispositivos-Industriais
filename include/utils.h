@@ -9,4 +9,5 @@ void lerLog(const string& filename);
 string obterHoraAtual();
 void sleep(int seconds);
 
+
 #endif // ! UTILS_H

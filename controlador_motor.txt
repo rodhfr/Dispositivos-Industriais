@@ -1,0 +1,35 @@
+†controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.125000
+controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.125000
+–controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.250000
+controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.250000
+rpm precisa ser maior que 0 
+controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.250000
+controlador_motor::verificar_seguranca(): Funciona normalmente 
+
+Calculando eficiencia da maquina 
+Eficiencia da maquina: 0.250000
+(controlador_motor::verificar_seguranca(): Comportamento an√¥malo, taxas fora do normal, desligando m√°quina 
+
+LOG: Parando controlador de motor... controlador_motor::parar() 
+Maquina parada com sucesso 
+LOG: Parando controlador de motor... controlador_motor::parar() 
+Maquina parada com sucesso 
+
+###############################
+Tempo de utilizacao da maquina (segundos): 6.000000
+###############################
