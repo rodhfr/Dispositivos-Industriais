@@ -1,7 +1,0 @@
-
-_______ Relatório do Robô Manipulador _______
-ID: ROBO-001
-Posição atual: (15.000000, 25.000000, 35.000000)
-Carga atual: 0.000000kg
-Carga máxima: 50.000000kg
-_____________________________________________
