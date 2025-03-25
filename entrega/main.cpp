@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../include/controlador_motor.h"
-#include "../include/sensor_temperatura.h"
-#include "../include/robo_manipulador.h"
-#include "../include/sistema_controle.h"
-#include "../include/utils.h"
+#include "controlador_motor.h"
+#include "sensor_temperatura.h"
+#include "robo_manipulador.h"
+#include "sistema_controle.h"
+#include "utils.h"
 #include <chrono>
 #include <thread>
 
@@ -109,7 +109,7 @@ int main() {
 
     robo_thread.join();
 
-    // sistema iniciar todos deixei no fim porque esta terrivel a saida do console e nao vai dar mais tempo de consertar essa parte
+    // sisetema iniciar todos deixei no fim porque esta terrivel a saida do console e nao vai dar mais tempo de consertar essa parte
     // falta experiencia pra mexer com threads melhor ta tudo uma por cima da outra se rodar todos ao mesmo tempo
     sistema.iniciar_todos();
     sistema.gerar_relatorio_completo();

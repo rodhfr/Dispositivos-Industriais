@@ -1,6 +1,6 @@
-#include "../include/sensor_temperatura.h"
-#include "../include/dispositivo_industrial.h" // classe base de sensor_temperatura
-#include "../include/utils.h" // write-read logs, time e um sleep os agnostic
+#include "sensor_temperatura.h"
+#include "dispositivo_industrial.h" // classe base de sensor_temperatura
+#include "utils.h" // write-read logs, time e um sleep os agnostic
 #include <iostream>
 
 using namespace std;

@@ -1,5 +1,5 @@
-#include "../include/controlador_motor.h"
-#include "../include/utils.h"
+#include "controlador_motor.h"
+#include "utils.h"
 #include <iostream>
 #include <string>
 #include <chrono>

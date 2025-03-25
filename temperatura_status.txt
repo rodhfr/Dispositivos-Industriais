@@ -1,41 +1,35 @@
-
-=======================================
-20.000000C Sun Mar 23 04:39:19 2025
- Temperatura normal...
-=======================================
-
-=======================================
-20.000000C Sun Mar 23 04:39:20 2025
- Temperatura normal...
-=======================================
-
-=======================================
-26.000000C Sun Mar 23 04:39:21 2025
- Temperatura normal...
-=======================================
-
-=======================================
-26.000000C Sun Mar 23 04:39:22 2025
- Temperatura normal...
-=======================================
 ======================================= 
-32.000000C Sun Mar 23 04:39:23 2025
- PERIGO: ALTA TEMPERATURA!
-======================================= 
-======================================= 
-32.000000C Sun Mar 23 04:39:24 2025
- PERIGO: ALTA TEMPERATURA!
-======================================= 
-======================================= 
-5.000000C Sun Mar 23 04:39:25 2025
+25.000000C Tue Mar 25 20:00:07 2025
  Temperatura ABAIXO da requerida para funcionamento
 ======================================= 
+
+=======================================
+50.000000C Tue Mar 25 20:00:08 2025
+ Temperatura normal...
+=======================================
 ======================================= 
-5.000000C Sun Mar 23 04:39:26 2025
+25.000000C Tue Mar 25 20:00:09 2025
  Temperatura ABAIXO da requerida para funcionamento
 ======================================= 
+ID: SENSOR-001
 
 ________ Limites de Temperatura ________
-Temperatura máxima permitida: 30.000000C|
-Temperatura mínima permitida: 10.000000C|
+Temperatura máxima permitida: 80.000000C|
+Temperatura mínima permitida: 30.000000C|
+________________________________________|
+ID: SENSOR-001
+
+________ Limites de Temperatura ________
+Temperatura máxima permitida: 80.000000C|
+Temperatura mínima permitida: 30.000000C|
+________________________________________|
+======================================= 
+25.000000C Tue Mar 25 20:00:15 2025
+ Temperatura ABAIXO da requerida para funcionamento
+======================================= 
+ID: SENSOR-001
+
+________ Limites de Temperatura ________
+Temperatura máxima permitida: 80.000000C|
+Temperatura mínima permitida: 30.000000C|
 ________________________________________|

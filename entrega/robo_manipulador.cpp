@@ -1,6 +1,6 @@
-#include "../include/dispositivo_industrial.h" // classe base de sensor_temperatura
-#include "../include/utils.h" // write-read logs, time e um sleep os agnostic
-#include "../include/robo_manipulador.h"
+#include "dispositivo_industrial.h" // classe base de sensor_temperatura
+#include "utils.h" // write-read logs, time e um sleep os agnostic
+#include "robo_manipulador.h"
 #include <iostream>
 #include <string>
 #include <unistd.h>
