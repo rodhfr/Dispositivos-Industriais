@@ -1,10 +1,9 @@
 #include "../include/controlador_motor.h"
 #include "../include/utils.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
-
-controlador_motor::controlador_motor(int p, int r) : potencia(p), rpm(r), horas_de_uso(0) { }
 
 void controlador_motor::ajustar_velocidade(int nova_rpm) {
     if (nova_rpm > 0) {

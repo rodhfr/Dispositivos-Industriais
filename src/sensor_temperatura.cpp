@@ -5,12 +5,6 @@
 
 using namespace std;
 
-sensor_temperatura::sensor_temperatura(double temp_min, double temp_max) : temperatura_minima(temp_min), temperatura_maxima(temp_max) {
-    if (temp_min >= temp_max) {
-        throw invalid_argument("temperatura_minima deve ser menor que temperatura_maxima");
-    }
-}
-
 bool sensor_temperatura::alerta_temperatura() {
     string mensagem, hr_atual = obterHoraAtual();
     if (temp_atual > temperatura_minima && temp_atual < temperatura_maxima) {
@@ -56,6 +50,7 @@ void sensor_temperatura::parar() {
 }
 
 string sensor_temperatura::gerar_relatorio() {
+    relatorio += "ID: " + getId() + "\n";
     relatorio += "\n________ Limites de Temperatura ________\n";
     relatorio += "Temperatura máxima permitida: " + to_string(temperatura_maxima) + "C|\n";
     relatorio += "Temperatura mínima permitida: " + to_string(temperatura_minima) + "C|\n";

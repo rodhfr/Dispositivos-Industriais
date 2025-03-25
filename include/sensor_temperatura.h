@@ -14,7 +14,11 @@ private:
     string relatorio;
 
 public:
-    sensor_temperatura(double temp_min, double temp_max);
+    sensor_temperatura(const string& i, double temp_min, double temp_max) : dispositivo_industrial(i), temperatura_minima(temp_min), temperatura_maxima(temp_max) {
+        if (temp_min >= temp_max) {
+            throw invalid_argument("temperatura_minima deve ser menor que temperatura_maxima");
+        }
+    }
     bool alerta_temperatura();
     void iniciar() override;
     void parar() override;

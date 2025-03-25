@@ -1,95 +1,52 @@
-#include "../include/controlador_motor.h"
-#include "../include/sensor_temperatura.h"  
-#include "../include/dispositivo_industrial.h"
-#include "../include/utils.h" // sleep fn
 #include <iostream>
-#include <thread>
+#include "../include/sistema_controle.h"
+#include "../include/dispositivo_industrial.h"
+#include "../include/controlador_motor.h"
+#include "../include/robo_manipulador.h"
+#include "../include/sensor_temperatura.h"
+#include "../include/utils.h"  // Para o sleep e os logs
 #include <string>
 
 using namespace std;
 
 int main() {
-    // TESTANDO SENSOR DE TEMPERATURA
-    /*try {*/
-    /*    // iniciar com 10 como temp minima e 30 max*/
-    /*    sensor_temperatura sensor(10.0, 30.0);*/
-    /**/
-    /**/
-    /*    // Inicia o sensor*/
-    /*    cout << "Iniciando sensor de temperatura..." << endl;*/
-    /*    thread sensorThread([&sensor]() {*/
-    /*        sensor.iniciar();*/
-    /*    });*/
-    /**/
-    /*    cout << "Colocando 20 graus de temperatura (Dentro da faixa)..." << endl;*/
-    /*    sensor.setTemperatura(20.0);*/
-    /*    sleep(2);*/
-    /**/
-    /*    cout << "Colocando 26 graus de temperatura (Dentro da faixa)..." << endl;*/
-    /*    sensor.setTemperatura(26.0);*/
-    /*    sleep(2);*/
-    /**/
-    /*    cout << "Colocando 32 graus de temperatura (Fora da faixa)..." << endl;*/
-    /*    sensor.setTemperatura(32.0);*/
-    /*    sleep(2);*/
-    /*    //this_thread::sleep_for(std::chrono::seconds(2));*/
-    /**/
-    /*    cout << "Colocando 5 graus de temperatura (Fora da faixa)..." << endl;*/
-    /*    sensor.setTemperatura(5.0);*/
-    /*    sleep(2);*/
-    /**/
-    /**/
-    /**/
-    /*    // Parar sensor*/
-    /*    cout << "Parando o sensor de temperatura..." << endl;*/
-    /*    sensor.parar();*/
-    /*    sensorThread.join();*/
-    /**/
-    /*    // Relatório final*/
-    /*    string relatorio = sensor.gerar_relatorio();*/
-    /**/
-    /*} catch (const exception& e) {*/
-    /*    cout << "Erro: " << e.what() << endl;*/
-    /*}*/
+    // Criando dispositivos
+    controlador_motor* motor = new controlador_motor("motor_01", 1500, 3000);
+    robo_manipulador* robo = new robo_manipulador("robo_01", 100.0);
+    sensor_temperatura* sensor = new sensor_temperatura("sensor_01", 20.0, 80.0);
 
-    // TESTANDO CONTROLADOR DE MOTOR
-    try {
-        // Iniciar com 10 como temperatura mínima e 30 como máxima
-        controlador_motor motor(5000, 3000); // Inicializando o motor com potência 5000 e 3000 RPM
+    // Criando o sistema de controle e adicionando dispositivos
+    sistema_controle sistema;
+    sistema.adicionar_dispositivo(motor);
+    sistema.adicionar_dispositivo(robo);
+    sistema.adicionar_dispositivo(sensor);
 
-        // Inicia o motor
-        cout << "Iniciando o motor..." << endl;
-        thread motorThread([&motor]() {
-            motor.iniciar();
-        });
+    // Iniciando todos os dispositivos
+    sistema.iniciar_todos();
 
-        cout << "Ajustando para 4000 RPM..." << endl;
-        motor.ajustar_velocidade(4000);
-        sleep(2);
+    // Verificando segurança
+    sistema.verificar_seguranca_geral();
 
-        cout << "Ajustando para 2000 RPM (Dentro da faixa)..." << endl;
-        motor.ajustar_velocidade(2000);
-        sleep(2);
+    // Gerando relatório completo do sistema
+    string relatorio_completo = sistema.gerar_relatorio_completo();
+    std::cout << "Relatório Completo do Sistema:\n" << relatorio_completo << std::endl;
 
-        cout << "Tentando ajustar para -500 RPM ..." << endl;
-        motor.ajustar_velocidade(-500);
-        sleep(2);
+    // Parando todos os dispositivos
+    sistema.parar_todos();
 
-        cout << "Tentando ajustar para 9000 RPM (Fora da faixa)..." << endl;
-        motor.ajustar_velocidade(9000);
-        sleep(2);
+    // Removendo dispositivos
+    sistema.remover_dispositivo("motor_01");
+    sistema.remover_dispositivo("robo_01");
+    sistema.remover_dispositivo("sensor_01");
 
-        cout << "Parando o motor..." << endl;
-        motor.parar();
-        motorThread.join();
-
-        string relatorio = motor.gerar_relatorio();
-        cout << relatorio << endl;
-
-    } catch (const exception& e) {
-        cout << "Erro: " << e.what() << endl;
-    }
+    // Liberação de memória
+    delete motor;
+    delete robo;
+    delete sensor;
 
     return 0;
 }
+
+
+
 
