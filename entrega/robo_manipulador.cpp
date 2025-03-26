@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 #include <unistd.h>
-#include <ncurses.h> 
 
 using namespace std;
 using std::cout;
