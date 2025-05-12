@@ -10,17 +10,17 @@
 - [x] classe robo_manipulador
 - [x] Implementação na main da classe robo_manipulador
 - [x] sistema_controle
-- [ ] implementacao sistema_controle na main
+- [x] implementacao sistema_controle na main
 - [x] comportamentos específicos para cada tipo de dispositivo
 - [x] raw pointers para representar os dispositivos
 - [x] Gerencie a memória corretamente, liberando recursos no destrutor da classe sistema_controle
 - [x] instancie diferentes tipos de dispositivos usando new
 - [x] Adicione-os ao sistema de controle
-- [ ] Demonstre o uso de polimorfismo ao chamar métodos através da classe base
-- [ ] Escrever documentação
-- [ ] Organizar hierarquia de arquivos como a atividade pede (criar uma branch provavelmente)
-- [ ] Relatório breve (máximo 2 páginas) explicando como os conceitos de POO foram aplicados
-- [ ] Criar um sistema de make/makefile ou cmake (aprender algo mais complexo nesse quesito)
+- [x] Demonstre o uso de polimorfismo ao chamar métodos através da classe base
+- [x] Escrever documentação
+- [x] Organizar hierarquia de arquivos como a atividade pede (criar uma branch provavelmente)
+- [x] Relatório breve (máximo 2 páginas) explicando como os conceitos de POO foram aplicados
+- [x] Criar um sistema de make/makefile ou cmake (aprender algo mais complexo nesse quesito)
 
 
 
